@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/*******************************************************************/
+/* 底部 - 页脚 */
+.footer {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #2d3237;
+    color: #778088;
+}
+
+.footer a {
+    color: #778088;
+}
+
+.footer .link-nav {
+    float: left;
+    margin: 20px 0;
+}
+
+.footer .link-nav a:hover {
+    color: #FF8D1B;
+}
+
+.footer .sns {
+    float: right;
+    margin-top: 30px;
+}
+
+.footer .link-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+}
+
+.footer .sns a.icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all .2s ease;
+}
+
+.footer .sns a.icon:hover {
+    width: 42px;
+    height: 42px;
+    background-color: #FF8D1B;
+    border: 1px solid #FF8D1B;
+}
+
+.footer .sns .sina-icon {
+    background-image: url("../imgs/icons/sina-icon.png");
+}
+
+.footer .sns .wechat-icon {
+    background-image: url("../imgs/icons/wechat_icon.png");
+}
+
+.footer .sns .rss-icon {
+    background-image: url("../imgs/icons/rss-icon.png");
+}

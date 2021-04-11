@@ -1,0 +1,457 @@
+@charset "UTF-8";
+@import "public-style.css";
+@import "header.css";
+@import "footer.css";
+
+.footer {
+    margin-top: 60px;
+}
+
+.body-bg {
+    background-color: #127BAB;
+    width: 100%;
+    height: 220px;
+}
+
+/*********************************************/
+/* 电影海报信息 */
+.content .movie-info-bar {
+    margin-top: -150px;
+    padding: 25px 0 0 0;
+    background-color: #fff;
+    border-radius: 7px 7px 0 0;
+    position: relative;
+}
+
+.movie-info-bar .movie-poster {
+    float: left;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #bababa;
+    box-shadow: 0 0 2px #ccc;
+    border-radius: 0 7px 7px 7px;
+    background: #fff;
+    padding: 10px;
+}
+
+.movie-info-bar .movie-poster img {
+    border-radius: 7px;
+    width: 280px;
+    height: 400px;
+}
+
+/* 电影信息 */
+.movie-info-bar .movie-info {
+    margin-left: 50px;
+    float: left;
+    color: #2d3237;
+    font-size: 16px;
+}
+
+.movie-info-bar .movie-info .movie-name-zh {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FF8D1B;
+}
+
+.movie-info-bar .movie-info .movie-name-ods {
+    font-size: 20px;
+    line-height: 1.3;
+    color: #FF8D1B;
+    margin-bottom: 20px;
+}
+
+.movie-info-bar .movie-info ul p {
+    display: inline-block;
+    padding: 8px 0;
+    width: 350px;
+}
+
+.movie-info-bar .movie-info ul .movie-profile {
+    padding-top: 10px;
+    line-height: 1.7;
+    width: 700px;
+    height: 100px;
+    overflow: hidden;
+}
+
+/* 想看、评分 按钮 */
+.movie-info-bar .movie-wish-grade-btn a {
+    margin: 30px 20px 0 0;
+    width: 120px;
+    height: 32px;
+    background-color: #127BAB;
+    color: #fff;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.movie-info-bar .movie-wish-grade-btn a:hover {
+    background-color: #FF8D1B;
+}
+
+.movie-info-bar .movie-wish-grade-btn i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-size: contain;
+}
+
+.movie-info-bar .movie-wish-btn i {
+    background-image: url("../imgs/icons/like-icon.png");
+}
+
+.movie-info-bar .movie-grade-btn i {
+    background-image: url("../imgs/icons/star-icon.png");
+}
+
+/* 电影成绩 */
+.movie-grade-box {
+    position: absolute;
+    top: 60px;
+    right: 80px;
+}
+
+.movie-grade-box .grade-box {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #679c21;
+    color: #fff;
+    text-align: center;
+}
+
+.movie-grade-box .grade-box b {
+    font-size: 35px;
+}
+
+.movie-grade-box .grade-box p {
+    font-size: 12px;
+}
+
+.movie-grade-box ul {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.movie-grade-box ul li {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.movie-grade-box ul li:nth-child(1) {
+    color: #f83838;
+}
+
+.movie-grade-box ul li:nth-child(2) {
+    color: #40a0e0;
+}
+
+.movie-grade-box ul li:nth-child(3) {
+    color: #FF8D1B;
+}
+
+/********************************************************/
+/* 主要内容器容 */
+.movie-main-container {
+    margin-top: 60px;
+}
+
+/************************************/
+/* 右边 侧边更多热映 */
+.movie-main-container .aside-content {
+    float: right;
+    width: 350px;
+}
+
+.aside-content .ac-title {
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    color: #FF8D1B;
+}
+
+.aside-content .more-movie {
+    margin-top: 30px;
+}
+
+.aside-content .more-movie li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #EEE;
+}
+
+.aside-content .more-movie img {
+    width: 105px;
+    height: 150px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+}
+
+.aside-content .more-movie .aside-info {
+    display: inline-block;
+    margin-left: 15px;
+    width: 225px;
+}
+
+
+.more-movie .aside-info h3 {
+    margin-bottom: 10px;
+}
+
+.more-movie .aside-info h3 a {
+    display: inline-block;
+    width: 180px;
+    color: #127BAB;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.more-movie .aside-info h3 span {
+    float: right;
+    color: #fff;
+    background-color: #679c21;
+    padding: 0 5px;
+}
+
+.more-movie .aside-info p {
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+/****************************************/
+/* 左边 主要内容*/
+.movie-main-container .main-content {
+    float: left;
+    width: 750px;
+}
+
+.main-content .tab-subtitle {
+    font-size: 18px;
+    border-bottom: 2px solid #EEE;
+}
+
+.main-content .tab-subtitle a {
+    display: inline-block;
+    color: #2d3237;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+
+.main-content .tab-subtitle a:hover, .main-content .tab-subtitle a.active {
+    color: #FF8D1B;
+    border-bottom: 2px solid #FF8D1B;
+    margin-bottom: -2px;
+}
+
+.main-content .tab-content {
+    margin-top: 20px;
+}
+
+.tab-content .bodpnd {
+    border-bottom: 2px solid #EEE;
+    padding-bottom: 20px;
+}
+
+/***********************/
+/*  tab 购票/预购内容 */
+.tab-content .title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    border-left: 3px solid #FF8D1B;
+    padding-left: 5px;
+    margin: 15px 0;
+}
+
+
+.tab-content .select-item a {
+    display: inline-block;
+    margin-right: 8px;
+    color: #2d3237;
+    padding: 2px 3px;
+}
+
+.select-item a:hover, .select-item a.active {
+    color: #FFF;
+    background-color: #FF8D1B;
+}
+
+.movie-watch-place .mwp-header .local-place {
+    margin-left: 15px;
+}
+
+.movie-watch-place .mwp-header .local-place:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background-image: url("../imgs/icons/local-icon.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center;
+}
+
+/* 搜索影院 搜索框 */
+#searchCinema {
+    width: 150px;
+    height: 24px;
+    border: 1px solid #FF8D1B;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 0 25px 0 10px;
+    color: #2d3237;
+}
+
+.movie-cinema-list .cinema-search-btn {
+    display: inline-block;
+    position: absolute;
+    left: 226px;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: #FF8D1B;
+    background-image: url(../imgs/icons/search-icon.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 电影院列表 */
+.cinema-list-item>li {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #EEE;
+}
+
+.cinema-list-item>li .row1 a {
+    font-size: 16px;
+    color: #2d3237;
+}
+
+.cinema-list-item>li .row1 a:hover {
+    border-bottom: 2px solid #FF8D1B;
+}
+
+.cinema-list-item>li .row2, .cinema-list-item>li .row3 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.cinema-list-item>li .row3 span {
+    padding: 2px 7px;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 600    ;
+    color: #fff;
+    background-color: #127BAB;
+    border-radius: 3px;
+}
+
+.cinema-list-item>li .ticket-price-buy {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    text-align: center;
+}
+
+.cinema-list-item>li .ticket-price-q {
+    color: #127BAB;
+    font-size: 14px;
+}
+
+.cinema-list-item>li .ticket-price-q span {
+    font-size: 24px;
+    color: #FF8D1B;
+}
+
+.cinema-list-item>li .ticket-buy-btn {
+    display: block;
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #FF8D1B;
+    border-radius: 20px;
+}
+
+/* 选座购票 展开的 */
+.cinema-list-item>li .ticket-choose-buy{
+    display: none;
+}
+
+.cinema-list-item>li .ticket-choose-buy li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 7px 0 0;
+    width: 240px;
+    height: 70px;
+    background-color: #fffaf5;
+    border: 1px solid #FF8D1B;
+}
+
+/* 左边 */
+.ticket-choose-buy li .tcb-lt{
+    float: left;
+    width: 160px;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #FF8D1B;
+}
+
+.ticket-choose-buy li .tcb-lt .time{
+    font-size: 28px;
+    padding-top: 5px;
+}
+
+/* 右边 */
+.ticket-choose-buy li .tcb-rt{
+    float: right;
+    width: 78px;
+    height: 100%;
+    text-align: center;
+}
+
+.ticket-choose-buy li .tcb-rt .ticket-price{
+    color: #FF8D1B;
+    font-size: 28px;
+    padding-top: 15px;
+}
+
+.ticket-choose-buy li .tcb-rt .buy-ticket{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #FF8D1B;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 18px;
+}
+
+.ticket-choose-buy li:hover .tcb-rt .ticket-price{
+    display: none;
+}
+
+.ticket-choose-buy li:hover .tcb-rt .buy-ticket{
+    display: block;
+}
+
+/* 收起（折叠） */
+.ticket-choose-buy .fold{
+    float: right;
+    margin-top: 10px;
+}
+
+
+
+
+
+

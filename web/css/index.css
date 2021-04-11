@@ -1,0 +1,367 @@
+@charset "UTF-8";
+@import "public-style.css";
+@import "header.css";
+@import "footer.css";
+
+
+/********************************************/
+/* 幻灯片 */
+.slidey {
+    height: 400px;
+}
+
+/* 幻灯片 - 主要 */
+.slidey .slidey-main {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slidey-main-link{
+    display: block;
+    height: 285px;
+}
+
+.slidey-main .slidey-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+    padding: 20px 70px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.slidey-overlay .slidey-overlay-title {
+    display: inline-block;
+    padding: 5px 30px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #FF8D1B;
+}
+
+.slidey-overlay .slidey-overlay-description {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.slidey-overlay .slidey-progress {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color: #FF8D1B;
+    overflow: hidden;
+}
+
+.slidey-main .slidey-ctrls {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 35px;
+    cursor: pointer;
+    opacity: .4;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+}
+
+.slidey-main .slidey-ctrls:hover {
+    opacity: 1;
+    background-color: #FF8D1B;
+}
+
+.slidey-main .slidey-ctrls-pre {
+    left: 10px;
+    background-image: url("../imgs/icons/pre-icon.png");
+}
+
+.slidey-main .slidey-ctrls-next {
+    right: 10px;
+    background-image: url("../imgs/icons/next-icon.png");
+}
+
+/* 幻灯片 - 列表 */
+.slidey .slidey-list {
+    width: 300px;
+    height: 400px;
+    float: left;
+    cursor: pointer;
+    background-color: #2C363F;
+}
+.slidey-list li.active {
+    background-color: #FF8D1B;
+}
+
+.slidey-list li.active .slidey-list-title {
+    color: #2C363F;
+}
+
+.slidey-list li.active .slidey-list-description {
+    color: #2C363F;
+}
+
+.slidey-list-img {
+    padding: 4px;
+}
+
+.slidey-list-img div {
+    width: 92px;
+    height: 92px;
+    box-shadow: 0 0 1px #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slidey-list-title {
+    padding: 5px 0 5px 4px;
+    color: #FF8D1B;
+    font-weight: 600;
+}
+
+.slidey-list-description {
+    display: block;
+    width: 200px;
+    height: 62px;
+    padding-left: 4px;
+    color: #fff;
+    font-size: smaller;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/********************************************/
+/*  */
+
+.movie-grid .panel{
+    margin-top: 60px;
+}
+
+/* 清除浮动 （父元素没有高度）*/
+.movie-grid .panel::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/*  主要内容 */
+.movie-grid .panel .main {
+    float: left;
+    width: 750px;
+}
+
+/* 排行榜 */
+.movie-grid .panel .aside {
+    float: right;
+    width: 350px;
+}
+
+.movie-grid .panel .panel-title {
+    font-size: 26px;
+    color: #FF8D1B;
+    border-left: 5px solid #FF8D1B;
+    padding: 5px 0 5px 10px;
+    margin-left: -15px;
+}
+
+.movie-grid .panel .panel-more {
+    float: right;
+    padding-top: 8px;
+}
+
+.movie-grid .panel .panel-more::after {
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: 2px solid #FF8D1B;
+    border-top: none;
+    border-left: none;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.movie-grid .movie-list ul {
+    margin-left: -30px;
+}
+
+/* 电影每一项 */
+.movie-grid .movie-list li {
+    position: relative;
+    margin: 30px 0 0 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    cursor: pointer;
+}
+
+/* 电影海报 */
+.movie-grid .movie-list .movie-poster {
+    position: relative;
+}
+
+.movie-list .movie-poster {
+    display: block;
+}
+
+.movie-list .movie-poster img {
+    width: 160px;
+    height: 224px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.movie-list .movie-poster .movie-score {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 7px;
+    background-color: #FF8D1B;
+    color: #fff;
+}
+
+.movie-list li .movie-title {
+    display: block;
+    width: 100%;
+    height: 32px;
+    color: #2d3237;
+    font-size: 18px;
+    padding-top: 7px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.movie-list li .movie-ticket-buy {
+    display: none;
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #FFA500;
+    position: absolute;
+    bottom: 0;
+}
+
+.movie-list li:hover .movie-poster{
+    opacity: .8;
+}
+
+.movie-list li:hover .movie-title{
+    width: 0;
+}
+
+.movie-list li:hover .movie-ticket-buy {
+    display: block;
+}
+
+.movie-list li .movie-ticket-buy:hover {
+    background-color: #FF8D1B;
+}
+
+/***************************************************/
+/* 侧边 */
+.movie-grid .aside .panel-title {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.movie-rank {
+    margin-top: 30px;
+}
+
+.movie-rank li {
+    margin-bottom: 20px;
+}
+
+.movie-rank li:hover .movie-rank-name {
+    color: #FF8D1B;
+}
+
+.movie-rank li a * {
+    display: inline-block;
+}
+
+.movie-rank .movie-rank-num {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #999;
+}
+
+.movie-rank .movie-rank-top3 {
+    border-radius: 3px;
+    color: #fff;
+    background-color: #FF8D1B;
+}
+
+.movie-rank .movie-rank-name {
+    padding-left: 10px;
+    font-size: 16px;
+    color: #2d3237;
+}
+
+.movie-rank .box-office {
+    float: right;
+    font-size: 14px;
+    color: #ff6000;
+}
+
+.movie-rank-top1 .movie-rank-num {
+    vertical-align: top;
+}
+
+.movie-rank-top1 img {
+    margin-left: 10px;
+    width: 120px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.movie-rank-top1 div {
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.movie-rank-top1 .movie-rank-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.movie-rank-top1 .box-office {
+    float: none;
+    display: block;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.footer{
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+

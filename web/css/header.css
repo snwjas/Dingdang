@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+body {
+    padding-top: 60px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+/*******************************************************************/
+/* 导航栏 - logo */
+.header .logo {
+    float: left;
+    height: 60px;
+    width: 170px;
+    background: url("../imgs/dingdang-logo.png") no-repeat 0;
+    background-size: contain;
+}
+
+/*******************************************************************/
+/* 导航栏 - 导航标签栏 */
+.header .nav {
+    background-color: #fff;
+    float: left;
+    margin-left: 30px;
+}
+
+.header .nav .navbar li {
+    float: left;
+}
+
+.header .nav .navbar li a {
+    display: inline-block;
+    text-align: center;
+    width: 105px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF8D1B;
+}
+
+.header .nav .navbar li a.active,
+.header .nav .navbar li a:hover {
+    background-color: #FF8D1B;
+    color: #fff;
+}
+
+/*******************************************************************/
+/* 导航栏 - 购物车 */
+.header .headcart {
+    float: right;
+    margin-left: 20px;
+}
+
+.headcart .cart-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-top: 15px;
+    border-radius: 50%;
+    background-color: #FF8D1B;
+    background-image: url("../imgs/icons/shoppingcard-icon.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*******************************************************************/
+/* 导航栏 - 用户登陆注册 */
+.header .user {
+    float: right;
+    margin-left: 20px;
+}
+
+/* 用户未登录样式 */
+.user .userout a.cur {
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+    color: #FF8D1B;
+}
+
+.user .userout a.cur:hover {
+    font-weight: bold;
+}
+
+/* 用户登陆后样式 */
+.header .user .userin {
+    height: 60px;
+    position: relative;
+    /*display: flex;
+    display: -webkit-flex;*/
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.userin img.user-face {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FF8D1B;
+    border-radius: 50%;
+}
+
+.userin a {
+    color: #666;
+}
+
+.userin a.menu-item-user {
+    color: #FF8D1B;
+}
+
+.userin:hover .dropdown-menu {
+    display: block;
+}
+
+.userin .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 25%;
+    background-color: #fff;
+}
+
+.userin .dropdown-menu li {
+    min-width: 60px;
+    margin: 10px 10px;
+}
+
+.userin .dropdown-menu li a:hover {
+    font-weight: bold;
+    color: #FF8D1B;
+}
+
+.userin:hover .caret {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*******************************************************************/
+/* 导航栏 - 搜索栏 */
+.header .search {
+    float: right;
+    margin-left: 20px;
+}
+
+.search .form-search {
+    height: 60px;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .form-search-input {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #FF9D1B;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: #faf8fa;
+    color: #666;
+    transition: all .3s ease;
+}
+
+/* 搜索输入框活动 */
+.search .form-search-input.active {
+    width: 200px;
+    padding: 0 35px 0 20px;
+}
+
+.search .form-search-icon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: #FF9D1B;
+    background-image: url("../imgs/icons/search-icon.png");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search .form-search-icon:hover {
+    background-color: #FF8D1B;
+}
+
+/*******************************************************************/
+/* 导航栏 - app下载 */
+.header .app-download {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    height: 60px;
+    float: right;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 手机图标 */
+.app-download .phone-icon {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-image: url("../imgs/icons/phone-icon.png");
+    background-size: contain;
+}
+
+.app-download .app-text {
+    display: inline-block;
+    color: #FF8D1B;
+}
+
+.app-download:hover .caret {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* 鼠标移动到 提示二维码 */
+.app-download:hover .qrcode-tip {
+    display: block;
+}
+
+/* app下载二维码提示 */
+.app-download .qrcode-tip {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* 二维码图片 */
+.qrcode-tip .qrcode-img {
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.qrcode-tip p.qrcode-tip-title {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.qrcode-tip p.qrcode-tip-content {
+    margin: 5px 0;
+    font-size: 17px;
+    color: #666;
+}
+
+
+
+
+
+
